@@ -1,0 +1,122 @@
+.tab-products {
+    width: 100%;
+    height: 370px;
+    background-color: #eeeeee;
+    position: relative;
+    /* border:2px solid blue; */
+}
+
+.hide-tab-products {
+    display: none;
+}
+
+.inner-tab-prod {
+    width: 100%;
+    height: 250px;
+    /* border: 2px solid red; */
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding:0px 10px;
+}
+.tab-card{
+    width:250px;
+    height:200px;
+    background: linear-gradient(132deg, #f1f4f4,#f6f7f7);
+    flex-shrink: 0;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.tab-image{
+    width: 100%;
+    height: 70%;
+    /* border:1px solid yellow; */
+    /* user-drag: none; */
+    
+}
+.tab-image img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+ 
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.tab-btns {
+    position: absolute;
+    border: 1.5px solid rgb(87, 86, 86);
+    width: 50px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    bottom: 50px;
+}
+
+#tab-right {
+    right: 20px;
+
+}
+
+#tab-left {
+    left: 20px;
+}
+.tab-txt{
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.tab-isnew{
+    width:40px;
+    height:20px;
+    border:0.5px solid rgb(0, 115, 255);
+    font-size: 0.7rem;
+    display: grid;
+    place-items: center;
+    border-radius: 30px;
+    color:rgb(0, 123, 255)
+}
+.tab-prod-compare{
+    width:50%;
+    /* height:33px; */
+    /* border:2px solid red; */
+    position: absolute;
+    bottom:40px;
+    left:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    border-radius: 30px;
+    padding:5px 0px;
+}
+.tab-prod-cmp-card{
+    width:50%;
+    height:30px;
+    border-right:2px solid rgb(190, 190, 189);
+    text-decoration: none;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+.tab-prod-cmp-card:last-child{
+    border-right:none
+}

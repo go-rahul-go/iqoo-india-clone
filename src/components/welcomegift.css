@@ -1,0 +1,24 @@
+.welcome-gift{
+    width:100px;
+    height:150px;
+    position: fixed;
+    top:20vh;
+    right:10px;
+    z-index:3
+}
+.welcome-gift-hide{
+    display: none;
+}
+@media (max-width:800px)
+{
+    .welcome-gift{
+        top:40vh;
+    }
+}
+
+@media (min-width:800px) and (max-width:1200px)
+{
+    .welcome-gift{
+        top:40vh;
+    }
+}

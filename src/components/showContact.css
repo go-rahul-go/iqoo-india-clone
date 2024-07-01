@@ -1,0 +1,124 @@
+.contact-pop{
+    position: fixed;
+    top:15%;
+    left:20vw;
+    width:60vw;
+    height:70vh;
+    background-color: rgba(255, 255, 255, 0.647);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index:4;
+    margin: auto;
+    /* border:2px solid rgb(250, 250, 248); */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding:0px 20px;
+}
+.hide-contact-pop{
+    display: none;
+}
+#contact-close-btn{
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-size: 2.5rem;
+    animation: rot-anti-clock 200ms ease-out forwards;
+    
+
+}
+#contact-close-btn:hover{
+    cursor: pointer;
+    animation: rot-clock 200ms ease-in forwards;
+    color:red;
+}
+@keyframes rot-clock {
+    0%{
+        transform: rotate(0deg);
+       
+    }
+    100%{
+        transform: rotate(90deg);
+       
+    }
+    
+}
+@keyframes rot-anti-clock {
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+.show-contact-point{
+    width:100%;
+    /* height:15vh; */
+    /* border:2px solid violet; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+    text-transform: capitalize;
+    padding:10px;
+    font-size: 1.3rem;
+    color:rgb(30, 29, 29)
+}
+.scp-icon{
+    width:50px;
+    height:50px;
+    background-color: orange;
+    display: grid;
+    place-items: center;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    animation: bounce 1400ms linear infinite;
+}
+@keyframes bounce {
+    0%,100%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-5%);
+    }
+    
+}
+#scp-phone{
+    font-size: 2.1rem;
+}
+@media (max-width:800px) {
+    .contact-pop{
+        top:80px;
+        width:80vw;
+        height:50vh;
+        left:10vw;
+    }
+    .show-contact-point{
+        font-size: 0.9rem;
+    }
+    #scp-phone{
+        font-size: 5.7vw;
+    }
+    
+}
+
+@media (min-width:800px) and (max-width:1200px) {
+    .contact-pop{
+       top:80px;
+       width:80vw;
+        height:40vh;
+        left:10vw;
+    }
+    .show-contact-point{
+        font-size: 1.1rem;
+    }
+    #scp-phone{
+        font-size:2rem;
+    }
+    
+}

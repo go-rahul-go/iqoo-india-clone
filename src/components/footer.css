@@ -1,0 +1,416 @@
+.footer {
+    width: 100%;
+    padding: 50px 50px 20px 50px;
+    background-color: #272c34;
+    overflow: hidden;
+}
+
+.pc-footer {
+    width: 100%;
+    height: 60vh;
+    /* border: 1px solid papayawhip; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+
+.pc-foot-links {
+    width: 55%;
+    height: 100%;
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-pc-foot-links {
+    width: 28%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.foot-title {
+    color: ghostwhite;
+    font-size: 1.2rem;
+
+}
+
+.foot-links-box {
+    width: 100%;
+    height: 80%;
+    /* border: 2px solid orange; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.foot-link {
+    text-decoration: none;
+    color: rgb(171, 170, 170);
+    transition: all 100ms linear;
+    font-size: 1rem;
+
+}
+
+.foot-link:hover {
+    color: orange;
+}
+
+.pc-foot-contact {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid white; */
+    color: rgb(171, 170, 170);
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pc-phone-number{
+    /* border:1px solid red; */
+    width:100%;
+}
+#phone-icons{
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+}
+#call-icon,.whats-icon{
+    font-size: 1.7rem;
+}
+#landline{
+    width:100%;
+    /* border:2px solid orange; */
+    color:white;
+    text-transform: uppercase;
+    padding-left:calc(1.5rem + 10px);
+    font-size: 1.8rem;
+}
+.pc-whatsemail{
+    width:100%;
+    text-decoration: none;
+    /* border:2px solid red; */
+    color:rgb(183, 183, 188);
+    display: flex;
+    align-items: center;
+    gap:10px;
+    text-transform: capitalize;
+}
+.pc-social-media{
+    /* border:2px solid yellow; */
+    width:100%;
+}
+#follow-us{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.pc-social-icons{
+    width:100%;
+    /* border:2px solid green; */
+    display: flex;
+    padding-left: calc(1.5rem + 10px);
+    gap:10px;
+    margin-top: 10px;
+}
+.sm-icons{
+    width:15%;
+    height:35px;
+   
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    color:#272c34;
+    background-color: rgb(225, 225, 226);
+    border-radius: 30px;
+}
+.sm-icons:hover{
+    background-color: orange;
+    color:#fff;
+    cursor: pointer;
+}
+.mob-footer {
+    display: none;
+}
+.social-media{
+    /* border:2px solid red; */
+}
+.social-media-icons{
+    width:100%;
+    /* border:2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 0px;
+    gap:10px;
+}
+.inner-social-media-icons{
+    width:45px;
+    height:30px;
+    background-color: aliceblue;
+    border-radius: 40px;
+    display: grid;
+    place-items: center;
+   
+}
+.inner-social-media-icons:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+.smi{
+    font-size: 1.3rem;
+    color:#272c34
+}
+.inner-social-media-icons:hover .smi{
+    color:#fff;
+}
+.mob-foot-contact{
+    width: 100%;
+    color:rgb(216, 216, 216);
+    padding:20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.pc-terms{
+    width:100%;
+    height:50px;
+    border-top:1px solid rgb(216, 216, 216);
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.term-box{
+    padding:0px 10px;
+    border-right: 1.5px solid rgb(117, 117, 117);
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:rgb(216, 216, 216);
+}
+.term-box:hover{
+    color:rgb(253, 89, 25);
+}
+.contact-link{
+    text-decoration: none;
+    color:rgb(220, 220, 220);
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+@media (min-width:800px) and (max-width:1200px) {
+    .footer {
+        overflow: hidden;
+        padding: 20px 30px;
+    }
+
+    .pc-footer {
+        display: none;
+    }
+
+    .mob-footer {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid rgb(83, 83, 83); */
+    }
+
+    .mob-foot-link {
+        width: 100%;
+        height: 40px;
+        /* border: 1px solid yellow; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        z-index:2
+    }
+
+    .mob-foot-link p {
+        color: ghostwhite;
+    }
+
+    .mob-foot-expand {
+        position: absolute;
+        right: 20px;
+        color: white;
+        z-index:2
+    }
+
+    .foot-menu-visible {
+        width: 100%;
+        height: 150px;
+        background-color: rgb(57, 57, 57);
+        animation: expandfoot 400ms linear forwards;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .foot-menu-hide {
+        display: none;
+    }
+
+    @keyframes expandfoot {
+        0% {
+            height: 0px;
+        }
+
+        100% {
+            height: 150px;
+        }
+
+    }
+
+    .mob-link {
+        color: rgb(193, 193, 193);
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    .social-media-icons{
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    .phone-contact-point{
+        font-size: 1.1rem;
+        text-transform: capitalize;
+    }
+    .whatsapp,.email{
+        font-size: 1.1rem;
+        text-transform: capitalize;
+    }
+    .pc-terms{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top:10px;
+    }
+    .company{
+        border:none
+    }
+}
+
+@media (max-width:800px) {
+
+    .footer {
+        /* min-height: 50vh; */
+        padding: 30px 30px;
+        overflow: hidden;
+    }
+
+    .pc-footer {
+        display: none;
+    }
+
+    .mob-footer {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid rgb(53, 53, 53); */
+    
+        
+    }
+
+    .mob-foot-link {
+        width: 100%;
+        height: 40px;
+        border-bottom: 1px solid rgb(80, 79, 79);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        z-index:2;
+        text-transform: capitalize;
+    }
+   
+    .mob-foot-link p {
+        color: ghostwhite;
+    }
+
+    .mob-foot-expand {
+        position: absolute;
+        right: 20px;
+        color: white;
+        z-index:2
+    }
+
+    .foot-menu-visible {
+        width: 100%;
+        height: 150px;
+        background-color: #272c34;
+        animation: expandfoot 400ms linear forwards;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        gap: 10px;
+        position: relative;
+        
+    }
+
+    .foot-menu-hide {
+        display: none;
+    }
+
+    @keyframes expandfoot {
+        0% {
+            height: 0px;
+            opacity: 0;
+        }
+
+        100% {
+            height: 150px;
+            opacity: 1;
+        }
+
+    }
+
+    .mob-link {
+        color: rgb(227, 227, 227);
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    .social-media-icons{
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    .phone-contact-point{
+        font-size: 1.1rem;
+        text-transform: capitalize;
+    }
+    .whatsapp,.email{
+        font-size: 1.1rem;
+        text-transform: capitalize;
+    }
+    #phone-number{
+        font-size: 1.4rem;
+        color:white;
+    }
+    .pc-terms{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top:40px;
+        gap:10px;
+    }
+    .company{
+        border:none
+    }
+    /* .other-terms{
+        background-color: orchid;
+       
+    } */
+    .term-box{
+        font-size: 0.7rem;
+        padding:0px 5px 0px 5px;
+    }
+}

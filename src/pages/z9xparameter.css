@@ -1,0 +1,220 @@
+.z9x-parameter{
+    width:100%;
+  
+    background-color: rgb(255, 255, 255);
+    padding-top:60px;
+    overflow: hidden;
+}
+.z9x-parameter-hide{
+    display: none;
+}
+.para-gallery-nav{
+    width:100%;
+    height:70px;
+    position: relative;
+    /* border:1px solid orange; */
+    z-index: 3;
+}
+
+.z9x-colors{
+    width: 100%;
+    height:100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid orangered; */
+    gap:5px;
+    
+}
+.parameter-title{
+    position: absolute;
+    left:10px;
+    top:20px;
+    text-transform: capitalize;
+}
+.z9x-parameter-pic{
+    width:35%;
+    height:80vh;
+    /* border:1px solid black; */
+    overflow: hidden;
+}
+.z9x-parameter-pic img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+#z9x-green-phone{
+    animation: a2 800ms linear forwards;
+}
+
+@keyframes a2 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#z9x-black-phone{
+    animation: a3 800ms linear forwards;
+}
+@keyframes a3 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.z9x-color-buttons{
+    width:30%;
+    height:20vh;
+    /* border:1px solid green; */
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   gap:15px;
+}
+.z9x-color-select{
+    width:100%;
+    /* border:2px solid greenyellow; */
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    gap:20px;
+    text-transform: capitalize;
+}
+.z9x-color-select:hover{
+    cursor: pointer;
+}
+
+#z9x-green-btn{
+    background: linear-gradient(65deg,aqua,rgb(166, 253, 166));
+}
+#z9x-black-btn{
+    background: linear-gradient(65deg,rgb(32, 32, 32),rgb(88, 88, 88));
+}
+.z9x-color-select span{
+    width:40px;
+    height:25px;
+    border-radius: 50px;
+    /* border:2px solid white; */
+}
+.active-outline{
+    outline: 2px solid rgb(0, 179, 255);
+    outline-offset:2px;
+}
+.z9x-specs{
+   
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding: 10px 0px;
+    border-bottom: 1.5px solid rgb(239, 239, 239);
+}  
+.z9x-specs:last-child{
+    border-bottom: none;
+} 
+.inner-z9x-specs{
+  width:70%;
+  height:100%;
+  /* border:2px solid red;   */
+    
+}
+#dimension{
+    width:50%;
+    height:45vh;
+    /* background-color: blueviolet; */
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+#dimension img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: left;
+}
+.inner-z9x-specs table,td{
+    width:100%;
+    /* border:2px solid black; */
+    border-collapse: collapse;
+    
+}
+.dimension-title{
+    width:35%;
+    padding:10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.dimension-spec{
+    line-height: 1.7rem;
+    padding:20px 10px;
+    text-transform: capitalize;
+}
+@media (max-width:800px)
+{
+    .z9x-colors{
+        flex-direction: column;
+    }
+    .z9x-parameter-pic
+    {
+        width:100%;
+        height:50vh;
+        margin-top: 50px;
+    }
+    .z9x-color-buttons
+    {
+        width:100%;
+        gap:10px;
+    }
+    #dimension{
+        width:100%;
+    }
+    .z9x-specs{
+        padding:80px 0px 15px 0px;
+        justify-content: center;
+    }
+    .inner-z9x-specs{
+        width:95%;
+    }
+    
+    .z9x-color-select{
+       padding-left: 20px;
+    }
+    .inner-z9x-specs table{
+        font-size: 0.90rem;
+    }
+}
+
+@media (min-width:800px) and (max-width:1200px)
+{
+    .z9x-colors{
+        padding: 50px;
+    }
+    .z9x-parameter-pic
+    {
+        width:40%;
+        height:45vh;
+        margin-top: 50px;
+       
+    }
+    /* .z9x-color-buttons
+    {
+        width:100%;
+    } */
+    #dimension{
+        width:100%;
+        height:40vh;
+    }
+    .z9x-specs{
+        padding:80px 0px 15px 0px;
+        justify-content: center;
+    }
+    .inner-z9x-specs{
+        width:95%;
+    }
+    
+}

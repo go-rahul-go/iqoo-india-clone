@@ -1,0 +1,429 @@
+.about {
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+}
+
+.about-hide {
+    display: none;
+}
+
+.about-hero {
+    width: 100%;
+    height: calc(100vh - 60px);
+    /* border: 2px solid red; */
+    position: relative;
+    background-image: url("../assets/about/iqoo_about-film-img1.jpg.webp");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.about-hero-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+
+    z-index: 1
+}
+
+.about-hero-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-hero-bio {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: transparent;
+    transition: all 300ms linear;
+    display: grid;
+    place-items: center;
+}
+
+.about-hero-bio:hover {
+    background-color: rgba(0, 0, 0, 0.46);
+}
+
+.ideology {
+    display: none;
+    width: 40%;
+    height: 50vh;
+    /* border:2px solid red; */
+    color: white;
+    text-transform: capitalize;
+    transition: all 400ms linear;
+}
+
+.ideology h1 {
+    font-size: 3rem;
+}
+
+.ideology p {
+    text-align: center;
+}
+
+.about-hero-bio:hover .ideology {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: crocodile 500ms linear forwards;
+    gap: 20px;
+}
+
+@keyframes crocodile {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+.about-moto{
+    width:100%;
+    height:calc(100vh - 60px);
+    display: flex;
+    overflow: hidden;
+}
+.moto{
+    width:33%;
+    height:100%;
+    /* border:2px solid red; */
+    transition: all 400ms linear;
+    position: relative;
+}
+.moto:hover{
+    width:40%;
+}
+.moto-pic{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+.moto-pic img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    /* object-position:top; */
+}
+.moto-bio{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.288);
+    display: grid;
+    place-items: center;
+}
+.moto-bio-show{
+    color:white;
+    text-align: center;
+    width:300px;
+}
+.moto-bio-show p{
+    visibility:collapse;
+}
+.moto-bio:hover .moto-bio-show p{
+    animation: up3 200ms linear 100ms forwards;
+}
+.moto-bio:hover{
+    background-color: rgba(15, 15, 15, 0.584);
+}
+@keyframes up3 {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        visibility: visible;
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    
+}
+.sponsor{
+    width:100%;
+    height:100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    padding:100px 0px;
+}
+.sponsor-pic{
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+.sponsor-pic img{
+    object-fit: contain;
+    width: 100%;
+    height:100%;
+}
+.sponsorship{
+    position: absolute;
+    bottom: 100px;
+    width:100%;
+    height:100px;
+    background-color: rgba(6, 6, 6, 0.508);
+    transition: all 400ms linear;
+    display: grid;
+    place-items: center;
+}
+.sponsor:hover .sponsorship{
+    height:100vh;
+}
+.hide-this{
+    color:white;
+    text-transform: uppercase;
+    color:grey
+}
+.show-this{
+    display: none;
+    color:rgb(206, 205, 205);
+    width:50%;
+    text-align: center;
+}
+.show-this h2{
+    text-transform: uppercase;
+    color:rgb(226, 226, 226);
+    margin-bottom: 10px;
+}
+.show-this p::selection{
+    background-color: white;
+    color:blue
+}
+.sponsor:hover .hide-this{
+    display: none;
+}
+.sponsor:hover .show-this{
+    display: block;
+}
+.mob-spon{
+    display: none;
+}
+.about-slider-box{
+    width:100%;
+    /* height:60vh; */
+    padding:20px 0px;
+    /* border:2px solid red; */
+    overflow: hidden;
+    border: none;
+    background-color: rgb(0, 0, 0);
+}
+.about-slider{
+    width:100%;
+    height:100%;
+    background:yellow;
+}
+.about-slide{
+   
+    width:100%;
+    height:40vh;
+    overflow: hidden;
+    background-color: black;
+    outline: none;
+    /* border: 2px solid rgb(34, 255, 0); */
+}
+.about-slide img{
+    object-fit: contain;
+    width:100%;
+    height:100%;
+
+}
+
+@media (max-width:800px) {
+    .about-hero {
+        height: calc(100vh - 60px);
+    }
+
+    .about-hero-bio {
+        background-color: rgba(0, 0, 0, 0.332);
+    }
+
+    .ideology {
+        width:90%;
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        /* border: 2px solid green; */
+    }
+
+    .ideology h1 {
+        font-size: 2rem;
+    }
+
+    .ideology p {
+        font-size: 1rem;
+    }
+    .about-moto{
+        flex-direction: column;
+        height:100%;
+    }
+    .moto{
+        width:100%;
+        height:60vh;
+        pointer-events: none;
+    }
+    .moto-bio{
+        background-color: rgba(12, 12, 12, 0.472);
+    }
+    .moto-bio-show{
+       
+        width:90%;
+    }
+    .moto-bio-show p{
+        visibility: visible;
+    }
+    .sponsor{
+        padding:0px;
+        pointer-events: none;
+    }
+    .sponsor-pic{
+        height:60vw;
+    } 
+    .sponsor-pic img{
+        object-fit: cover;
+    }
+    .sponsorship{
+        width:100%;
+        /* height:50vw; */
+        bottom:0;
+        left:0;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 1rem;
+    }
+    .hide-this{
+        display: none;
+    }  
+    .show-this{
+        display: none;
+        width:100%;
+    }
+    .mob-spon{
+        display: block;
+        position: absolute;
+        bottom:0px;
+        /* border:2px solid yellow; */
+        width:100%;
+        color:rgb(172, 171, 171);
+        text-align: center;
+        text-transform:uppercase;
+        padding:10px 0px;
+    }
+    .about-slider-box{
+        padding:50px 0px;
+    }
+    .about-slide{
+        height:50vw;
+    }
+}
+
+@media (min-width:800px) and (max-width:1200px) {
+    .about-hero {
+        height: calc(100vh - 60px);
+    }
+
+    .about-hero-bio {
+        background-color: rgba(0, 0, 0, 0.278);
+    }
+
+    .ideology {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .ideology h1 {
+        font-size: 3rem;
+    }
+
+    .ideology p {
+        font-size: 1.5rem;
+    }
+    .about-moto{
+        flex-direction: column;
+        height:100%;
+    }
+    .moto{
+        width:100%;
+        height:80vh;
+        pointer-events: none;
+    }
+    .moto-bio{
+        background-color: rgba(12, 12, 12, 0.472);
+    }
+    .moto-bio-show{
+       
+        width:90%;
+        font-size: 2rem;
+    }
+    .moto-bio-show p{
+        visibility: visible;
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+    .sponsor{
+        padding:0px;
+        pointer-events: none;
+    }
+    .sponsor-pic{
+        height:60vw;
+    } 
+    .sponsor-pic img{
+        object-fit: cover;
+    }
+    .sponsorship{
+        width:100%;
+        /* height:50vw; */
+        bottom:0;
+        left:0;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 1rem;
+        display: none;
+    }
+    .hide-this{
+        display: none;
+    }  
+    .show-this{
+        display: none;
+        width:100%;
+    }
+    .mob-spon{
+        display: block;
+        position: absolute;
+        bottom:0px;
+        /* border:2px solid yellow; */
+        width:100%;
+        color:rgb(172, 171, 171);
+        text-align: center;
+        text-transform:uppercase;
+        padding:20px 0px;
+        font-size:1.7rem;
+    }
+    .about-slider-box{
+        padding:40px 10px;
+    }
+    .about-slide{
+        height:45vw;
+    }
+}

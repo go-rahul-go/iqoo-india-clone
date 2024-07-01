@@ -1,0 +1,25 @@
+.other-top{
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom:50px;
+    right:30px;
+    /* border:2px solid red; */
+    width:60px;
+    height:40px;
+    z-index:3;
+    font-size: 1.5rem;
+    background-color: rgba(128, 128, 128, 0.62);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter:blur(10px);
+    color:#fff;
+    border-radius: 30px;
+    transition: all 200ms linear;
+}
+.other-top-hide{
+    display: none;
+}
+.other-top:hover{
+    background-color: rgb(0, 162, 255);
+   
+}

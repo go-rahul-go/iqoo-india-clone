@@ -1,0 +1,31 @@
+.iqoo-logo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid blue; */
+    font-size: 2.2rem;
+    font-weight: 500;
+    gap:2px;
+}
+#iqoo-power-icon{
+    transform: rotate(120deg);
+    font-size: 1.9rem;
+}
+
+
+@media (max-width:800px)
+{
+    .iqoo-logo{
+        font-size:1.4rem;
+    }
+    #iqoo-power-icon{
+        
+        font-size: 1.2rem;
+    }
+}
+@media (min-width:800px) and (max-width:1200px)
+{
+    
+    
+}

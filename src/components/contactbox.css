@@ -1,0 +1,22 @@
+.contact-box
+{
+    position: fixed;
+    bottom:14%;
+    right:20px;
+    width:60px;
+    height: 40px;
+    background: rgb(253, 242, 214);
+    display: grid;
+    place-items: center;
+    font-size: 1.8rem;
+    border-radius: 20px;
+    transition: all 300ms linear;
+    color: orange;
+}
+.contact-box:hover{
+    cursor: pointer;
+    transform: translateY(-5%);
+    transform: scale(1.1);
+    color:rgb(255, 255, 255);
+    background-color: orange;
+}
